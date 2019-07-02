@@ -16,7 +16,7 @@
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook",
     "predeploy": "yarn storybook:build",
-    "deploy": "gh-pages -d storybook-static",
+    "deploy": "gh-pages -d storybook-static && rm -rf storybook-static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
