@@ -22,8 +22,8 @@ export default ({
   duration = 500,
   easing = 'ease-in-out',
   delay = 0,
-  onBeforeAnimation,
-  onAfterAnimation,
+  onBefore,
+  onAfter,
   ...props
 }) => {
   const containerRef = useRef(null);
@@ -35,12 +35,11 @@ export default ({
     const newHeight = determineHeight(height, containerRef);
     const allHeights = { given: height, computed: newHeight };
 
-    if (onBeforeAnimation) onBeforeAnimation(allHeights);
+    if (onBefore) onBefore(allHeights);
 
     setComputedHeight(newHeight);
 
-    if (onAfterAnimation)
-      setTimeout(() => onAfterAnimation(allHeights), delay + duration);
+    if (onAfter) setTimeout(() => onAfter(allHeights), delay + duration);
   }, [height]);
 
   const componentStyles = {

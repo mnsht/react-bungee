@@ -9,6 +9,7 @@
     "start": "rollup -c -w",
     "build": "rollup -c",
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o ./docs",
     "prepare": "yarn build",
     "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -39,7 +40,7 @@
   "browserslist": "> 0.25%, not dead",
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged && yarn build-storybook"
     }
   },
   "devDependencies": {

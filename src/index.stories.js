@@ -49,8 +49,8 @@ stories.add('default', () => {
           duration={duration}
           easing={easing}
           delay={delay}
-          onBeforeAnimation={values => console.log('Before animation', values)}
-          onAfterAnimation={values => console.log('After animation', values)}
+          onBefore={values => console.log('Before animation', values)}
+          onAfter={values => console.log('After animation', values)}
         >
           <p>This is something that has height...</p>
           <p>This is something that has height...</p>
