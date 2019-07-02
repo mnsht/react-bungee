@@ -5,7 +5,8 @@ A small, modern React component to help you transition height
 - Zero dependencies
 - 1.1kb gzipped
 - Uses React Hooks (>= 16.8.0)
-- Play around with it in Storybook
+
+[Play around with it in Storybook](https://mnsht.github.io/react-bungee/)
 
 ## Installation
 
