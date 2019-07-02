@@ -1,0 +1,12 @@
+.my-component {
+  margin: 20px auto;
+  width: 600px;
+}
+
+.my-box {
+  font-family: sans-serif;
+  padding: 10px 20px;
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
