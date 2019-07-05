@@ -58,7 +58,6 @@ You'll need to keep track of what your current height is. You can do so using co
 ## Contributing
 
 1. `yarn install` - installs all dev dependencies
-2. `yarn start` - starts the Rollup task to compile code as you save
-3. `yarn storybook` - your storybook preview
+2. `yarn start` - your storybook preview
 
 Fork and PR at will!
